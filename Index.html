@@ -10,6 +10,17 @@
 <h1><ins>Таблица умножения</ins></h1>
 <script>
 var NumberTable = prompt('Введите максимальное число, для которого требуется построить таблицу умножения');
+var DelNumberTable = getOST(NumberTable,5),counter = 0;
+var support = 0; // Вспомогательные переменные
+for (var i = 0; i<=DelNumberTable;i++){  // цикл, отвечающий за создание новый таблиц
+    document.write('<table>');
+    document.write('<tr>');
+    for (var counet_slob = 1; counet_slob <=10;counet_slob++){
+        document.write('<th>'+'Умножаем на '+counet_slob+'</th>');
+    }
+    document.write('</tr>');
+    document.write('<table>');
+}
 </script>
 </body>
 </html>
