@@ -12,12 +12,17 @@
 var NumberTable = prompt('Введите максимальное число, для которого требуется построить таблицу умножения');
 var DelNumberTable = getOST(NumberTable,5),counter = 0;
 var support1 = 1, supporter = 1; // Вспомогательные переменные
+var Mumble = NumberTable;
 for (var i = 0; i<=DelNumberTable;i++){  // цикл, отвечающий за создание новый таблиц
     document.write('<table>');
     document.write('<tr>');
     for (var counet_slob = 1; counet_slob <=5;counet_slob++){
         document.write('<th>'+'Умножаем на '+support1+'</th>');
         support1++;
+        NumberTable--;
+        if (NumberTable<=0){
+            break;
+        }
     }
     document.write('</tr>');
     document.write('<tr>');
@@ -30,6 +35,10 @@ document.write('<td>')
         }
     }
     document.write('</td>')
+        Mumble--;
+        if (Mumble<=0){
+    break;
+        }
     }
     document.write('</tr>');
     document.write('<table>');
