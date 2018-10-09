@@ -21,11 +21,16 @@ for (var i = 0; i<=DelNumberTable;i++){  // цикл, отвечающий за 
     }
     document.write('</tr>');
     document.write('<tr>');
+    for (var counterTD = 1; counterTD <=5;counterTD++){
 document.write('<td>')
-    for (supporter = 1; supporter <=10;supporter++){
-        document.write('<br>'+'1x'+supporter);
+    for (var support4 = 1; support4 <=10;support4++){
+        document.write('<br>'+supporter+'x'+support4+'='+support4*supporter);
+        if (support4==10){
+            supporter++;
+        }
     }
     document.write('</td>')
+    }
     document.write('</tr>');
     document.write('<table>');
 }
